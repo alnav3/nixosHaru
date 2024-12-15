@@ -78,8 +78,6 @@
           system = host.system;
           modules =
             [
-              # NixOS encryption module
-              sops-nix.nixosModules.sops
               # disko
               disko.nixosModules.disko
 

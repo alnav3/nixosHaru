@@ -27,9 +27,6 @@
     nixos-hardware.url = "github:NixOS/nixos-hardware/master";
 
     stylix.url = "github:danth/stylix";
-    # Sops-nix for encryption
-    sops-nix.url = "github:Mic92/sops-nix/a4c33bfecb93458d90f9eb26f1cf695b47285243";
-    sops-nix.inputs.nixpkgs.follows = "nixpkgs";
 
     # deck experience on NixOS
     jovian-nixos.url = "github:Jovian-Experiments/Jovian-NixOS";

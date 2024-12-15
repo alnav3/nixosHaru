@@ -16,10 +16,10 @@
     serviceConfig.ExecStart = "${pkgs.bluez}/bin/mpris-proxy";
   };
 
-  #environment.systemPackages = [
-  #  pkgs.rofi-bluetooth
-  #  pkgs.alsa-utils
-  #  pkgs.pavucontrol
-  #  pkgs.easyeffects
-  #];
+  environment.systemPackages = [
+    pkgs.rofi-bluetooth
+    pkgs.alsa-utils
+    pkgs.pavucontrol
+    pkgs.easyeffects
+  ];
 }

@@ -22,10 +22,6 @@
       value.source = "${inputs.dotfiles}/zsh/.zshrc";
     }
     {
-      name = ".config/oh-my-posh/zen.toml";
-      value.source = "${inputs.dotfiles}/zsh/.config/oh-my-posh/zen.toml";
-    }
-    {
       name = ".config/kanshi/config";
       value.source = "${inputs.dotfiles}/kanshi/config";
     }

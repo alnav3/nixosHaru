@@ -115,7 +115,6 @@
 
                 # Ricing the nixOS way
                 inputs.stylix.nixosModules.stylix
-                nixos-hardware.nixosModules.lenovo-13-7040-amd
               ]
               else []
             );

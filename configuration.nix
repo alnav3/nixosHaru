@@ -1,17 +1,13 @@
 {
   pkgs,
   meta,
-  overlays,
   ...
 }: {
     security.polkit.enable = true;
     # Add overlays
-  nixpkgs = {
+    nixpkgs = {
     # You can add overlays here
-    overlays = [
-      # Add overlays your own flake exports (from overlays and pkgs dir):
-      overlays.additions
-    ];
+    overlays = [];
   };
   imports =
     [./machines/${meta.hostname}/configuration.nix];

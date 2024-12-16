@@ -2,7 +2,8 @@
   pkgs,
   inputs,
   ...
-}: 
+}:
+let
   # Convertir archivos estáticos en una lista explícita
   staticFiles = [
     {
@@ -53,6 +54,9 @@
       value.source = "${inputs.tpm}";
     }
   ];
+
+  # Define generatedFiles as an empty list if not defined elsewhere
+  generatedFiles = [];
 in {
   programs.home-manager.enable = true;
   programs.kitty = {

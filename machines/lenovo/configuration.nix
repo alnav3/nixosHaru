@@ -7,7 +7,7 @@
   imports = [
     ./../../modules/backup.nix
     ./../../modules/battery.nix
-    #./../../modules/bluetooth.nix
+    ./../../modules/bluetooth.nix
     ./../../modules/desktop.nix
     ./../../modules/media.nix
     ./../../modules/networking.nix

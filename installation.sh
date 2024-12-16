@@ -23,6 +23,8 @@ chmod 600 "$temp/etc/ssh/ssh_host_ed25519_key"
 # Execute this command to rebuild the flake cache.
 
 # nix flake lock --update-input dotfiles --extra-experimental-features nix-command --extra-experimental-features flakes
+# sudo nix --experimental-features "nix-command flakes" run github:nix-community/disko/latest -- --mode destroy,format,mount /tmp/disk-config.nix
+# sudo nixos-rebuld switch --flake '/home/nixos/nixos#lenovo'
 
 nixos-anywhere --extra-files "$temp" --flake '.#lenovo' nixos@192.168.1.143
 

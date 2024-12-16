@@ -19,5 +19,10 @@ sudo cat /etc/ssh/ssh_host_ed25519_key > "$temp/etc/ssh/ssh_host_ed25519_key"
 chmod 600 "$temp/etc/ssh/ssh_host_ed25519_key"
 
 # Install NixOS to the host system with our secrets
+
+# Execute this command to rebuild the flake cache.
+
+# nix flake lock --update-input dotfiles --extra-experimental-features nix-command --extra-experimental-features flakes
+
 nixos-anywhere --extra-files "$temp" --flake '.#lenovo' nixos@192.168.1.143
 

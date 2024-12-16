@@ -70,7 +70,6 @@
         name = host.name;
         value = nixpkgs.lib.nixosSystem {
           specialArgs = {
-            overlays = import ./overlays;
             inherit inputs dotfiles;
             meta = {hostname = host.name;};
             pkgs-stable = inputs.nixpkgs-stable.legacyPackages.${host.system};

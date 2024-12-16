@@ -7,7 +7,7 @@
   imports = [
     ./../../modules/backup.nix
     ./../../modules/battery.nix
-    #./../../modules/bluetooth.nix
+    ./../../modules/bluetooth.nix
     ./../../modules/desktop.nix
     ./../../modules/media.nix
     ./../../modules/networking.nix
@@ -34,8 +34,6 @@
   # Updating firmware | after first start we need to run fwupdmgr update
   services.fwupd.enable = true;
 
-  # Suspend/wake workaround, keyboard will not wake up the system
-  hardware.lenovo.amd-7040.preventWakeOnAC = true;
 
 services.kanata = {
   enable = true;
